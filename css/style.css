@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Milonga&display=swap');
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background-image: url(/img/spaceBackground.png);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Milonga';
+    font-size: 6vh;
+    text-align: center;
+    height: 100vh;
+}
+header h1{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+header p{
+    font-size: 2vh;
+    opacity: 0.5;
+    animation: bounce 2s infinite;
+}
+
+header span{
+    opacity: 0.5;
+    animation: bounce 2s infinite;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    background-image: linear-gradient( to right, #6d49af , #E57590 50%);
+    min-height: 750px;
+    width: 100%;
+    margin: auto;
+    font-size: 2em;
+}
+
+.container p{
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: justify;
+}
+
+.container img{
+    height: 750px;
+}
+.borderimg img{
+    border-radius: 50%;
+}
+
+.none{
+    color: white;
+    background: none;
+}
+
+.none p{
+    margin: 115px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: none;
+    color: white;
+    font-family: 'Milonga';
+    font-size: 3vh;
+}
